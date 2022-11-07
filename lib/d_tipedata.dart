@@ -11,22 +11,36 @@ void main() {
 }
 
 // returnkan data kata/teks
-dynamic getNama() {}
+dynamic getNama() {
+  return "Thoriq";
+}
 
 // returnkan data bilangan bulat
-dynamic getUmur() {}
+dynamic getUmur() {
+  return 18;
+}
 
 // returnkan data bilangan desimal
-dynamic getTinggi() {}
+dynamic getTinggi() {
+  return 167.5;
+}
 
 // returnkan data boolean
-dynamic getIsWRIMember() {}
+dynamic getIsWRIMember() {
+  return true;
+}
 
 // returnkan data list
-dynamic getHobi() {}
+dynamic getHobi() {
+  return [];
+}
 
 // returnkan data map
-dynamic getAlamat() {}
+dynamic getAlamat() {
+  return {"nama": "thoriq"};
+}
 
 // returnkan data set
-dynamic getAnggota() {}
+dynamic getAnggota() {
+  return {1, 2, 3, 4};
+}
