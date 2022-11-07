@@ -9,4 +9,11 @@
 
 // hint: gunakan stdin.readLineSync() untuk membaca input dari user
 
-void main() {}
+import 'dart:io';
+
+void main() {
+  String? nama = stdin.readLineSync();
+  int? umur = int.parse(stdin.readLineSync()!);
+
+  print("Halo, saya ${nama}, umur saya ${umur} tahun");
+}
