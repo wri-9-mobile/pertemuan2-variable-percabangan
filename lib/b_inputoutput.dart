@@ -8,5 +8,12 @@
 // Halo, saya Ilzam, umur saya 17 tahun
 
 // hint: gunakan stdin.readLineSync() untuk membaca input dari user
+import 'dart:io';
 
-void main() {}
+void main() {
+  
+  String? nama = stdin.readLineSync();
+  int? umur = int.tryParse(stdin.readLineSync()!);
+
+  print("Halo, saya $nama, umur saya $umur tahun");
+}
