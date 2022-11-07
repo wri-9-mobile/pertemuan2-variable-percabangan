@@ -1,6 +1,6 @@
 // Program pendaftaran TNI.
-// Pak Wiri adalah Jendral TNI. Tahun ini Pak Wiri akan mengadakan pendaftaran TNI.
-// Pak Wiri meminta bantuan Anda untuk membuat program pendaftaran TNI.
+// Pak Arip adalah Jendral TNI. Tahun ini Pak Arip akan mengadakan pendaftaran TNI.
+// Pak Arip meminta bantuan Anda untuk membuat program pendaftaran TNI.
 // Program akan menentukan apakah kandidat dapat mendafatar atau tidak berdasarkan:
 // - Usia minimal 17 tahun
 // - Tinggi badan minimal 170 cm (laki-laki) dan 160 cm (perempuan)
