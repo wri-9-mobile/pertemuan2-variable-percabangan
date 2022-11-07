@@ -8,5 +8,14 @@
 // 16
 // output:
 // Tidak boleh mengendarai mobil
+import 'dart:io';
 
-void main() {}
+void main() {
+  int? umur = int.tryParse(stdin.readLineSync()!) ?? 17;
+
+  if (umur >= 17) {
+    print("Boleh mengendarai mobil");
+  } else {
+    print("Tidak boleh mengendarai mobil");
+  }
+}
