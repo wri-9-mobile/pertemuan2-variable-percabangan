@@ -37,4 +37,37 @@
 // Tidak boleh mendaftar
 //
 
-void main() {}
+import 'dart:io';
+void main() {
+  String? kelamin = stdin.readLineSync();
+  int? umur = int.tryParse(stdin.readLineSync()!) ?? 0;
+  double? tinggi = double.tryParse(stdin.readLineSync()!) ?? 0;
+  int? berat = int.tryParse(stdin.readLineSync()!) ?? 0;
+
+ if (umur >= 17) {
+   if (kelamin == 'L' || kelamin == 'l') {
+    if (tinggi >= 1.7) {
+      if (berat <= 90) {
+        print("Boleh mendaftar");
+      } else {
+        print("Tidak boleh mendaftar");
+ } 
+    } else {
+      print("Tidak boleh mendaftar");
+ }
+
+  } else if (kelamin == 'P' || kelamin == 'p') {
+    if (tinggi >= 1.6) {
+      if (berat <= 80) {
+        print("Boleh mendaftar");
+      } else {
+        print("Tidak boleh mendaftar");
+      }
+    } else {
+      print("Tidak boleh mendaftar");
+    }
+  }
+ } else {
+   print("Tidak boleh mendaftar");
+ }
+}
