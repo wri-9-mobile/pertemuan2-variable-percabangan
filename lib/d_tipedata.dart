@@ -12,7 +12,7 @@ void main() {
 
 // returnkan data kata/teks
 dynamic getNama() {
-  String name = "Raihan";
+  String name = "Achmad Raihan Fahrezi Effendy";
   return name;
 }
 

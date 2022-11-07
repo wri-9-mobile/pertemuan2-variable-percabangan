@@ -56,24 +56,4 @@ void main() {
   } else {
     print("Tidak boleh mendaftar");
   }
-
-  // if (usia < 17) {
-  //   print("Tidak boleh mendaftar");
-  //   return;
-  // }
-
-  // if (kelamin == "L") {
-  //   if (tinggi >= 170 && (berat >= 60 && berat <= 90)) {
-  //     print("Boleh mendaftar");
-  //   } else {
-  //     print("Tidak boleh mendaftar");
-  //   }
-  // } else if (kelamin == "P") {
-  //   if (tinggi >= 160 && (berat >= 50 && berat <= 80)) {
-  //     print("Boleh mendaftar");
-  //   }
-  //   else {
-  //     print("Tidak boleh mendaftar");
-  //   }
-  // }
 }
