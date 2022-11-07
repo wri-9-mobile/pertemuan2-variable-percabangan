@@ -1,2 +1,6 @@
 // tampilkan "Halo WRI!" ke layar!
-void main() {}
+import 'dart:io';
+
+void main() {
+  print("Halo WRI!");
+}

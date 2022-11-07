@@ -1,5 +1,7 @@
 // Isi setiap fungsi dengan tipe data yang tepat!
 
+import 'dart:io';
+
 void main() {
   print(getNama());
   print(getUmur());
@@ -11,22 +13,36 @@ void main() {
 }
 
 // returnkan data kata/teks
-dynamic getNama() {}
+dynamic getNama() {
+  return "Fahri";
+}
 
 // returnkan data bilangan bulat
-dynamic getUmur() {}
+dynamic getUmur() {
+  return 18;
+}
 
 // returnkan data bilangan desimal
-dynamic getTinggi() {}
+dynamic getTinggi() {
+  return 163.5;
+}
 
 // returnkan data boolean
-dynamic getIsWRIMember() {}
+dynamic getIsWRIMember() {
+  return true;
+}
 
 // returnkan data list
-dynamic getHobi() {}
+dynamic getHobi() {
+  return ["Membaca", "Coding"];
+}
 
 // returnkan data map
-dynamic getAlamat() {}
+dynamic getAlamat() {
+  return {"kota": "Malang", "provinsi": "Jawa Timur"};
+}
 
 // returnkan data set
-dynamic getAnggota() {}
+dynamic getAnggota() {
+  return {"Fahri", "Aku", "Dia"};
+}
