@@ -11,22 +11,52 @@ void main() {
 }
 
 // returnkan data kata/teks
-dynamic getNama() {}
+dynamic getNama() {
+
+  return "Fiqlal";
+}
 
 // returnkan data bilangan bulat
-dynamic getUmur() {}
+dynamic getUmur() {
+
+  return 18;
+}
 
 // returnkan data bilangan desimal
-dynamic getTinggi() {}
+dynamic getTinggi() {
+
+return 0.1;
+
+}
 
 // returnkan data boolean
-dynamic getIsWRIMember() {}
+dynamic getIsWRIMember() {
+
+return true;
+}
 
 // returnkan data list
-dynamic getHobi() {}
+dynamic getHobi() {
+
+return ["GAME, MEMBACA"];
+}
 
 // returnkan data map
-dynamic getAlamat() {}
+dynamic getAlamat() {
+
+  return {
+    'jalan' : 'Kebang turi',
+    'kecamatan' : 'Lowokwaru',
+    'kota' : 'Malang'
+
+};
+
+}
 
 // returnkan data set
-dynamic getAnggota() {}
+dynamic getAnggota() {
+
+return {
+  1,2,3
+};
+}

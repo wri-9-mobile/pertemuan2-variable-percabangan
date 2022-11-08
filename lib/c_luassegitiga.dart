@@ -5,4 +5,17 @@
 // output:
 // 25.0
 
-void main() {}
+
+import 'dart:ffi';
+import 'dart:io';
+
+
+void main() {
+
+int alas = int.tryParse(stdin.readLineSync()!) ?? 0;
+int tinggi = int.tryParse(stdin.readLineSync()!)?? 0;
+
+double all = alas*tinggi /2;
+print(all);
+
+}
