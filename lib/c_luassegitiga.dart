@@ -5,4 +5,11 @@
 // output:
 // 25.0
 
-void main() {}
+import 'dart:io';
+
+void main() {
+  int? alas = int.parse(stdin.readLineSync()!);
+  int? tinggi = int.parse(stdin.readLineSync()!);
+  double luas = tinggi * alas * 0.5;
+  print(luas);
+}
