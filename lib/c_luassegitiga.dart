@@ -5,4 +5,11 @@
 // output:
 // 25.0
 
-void main() {}
+import 'dart:io';
+
+void main() {
+  int a = int.tryParse(stdin.readLineSync()!) ?? 10;
+  int b = int.tryParse(stdin.readLineSync()!) ?? 5;
+  double result = (a*b/2);
+  print("$result");
+}
