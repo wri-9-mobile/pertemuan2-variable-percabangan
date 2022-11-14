@@ -14,7 +14,7 @@ void main() {
 
   if (umur > 16){
     print("Boleh mengendarai mobil");
- } else {
-  print ("Tidak boleh mengendarai mobil");
- }
+  } else {
+    print ("Tidak boleh mengendarai mobil");
+  }
 }
