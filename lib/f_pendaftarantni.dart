@@ -37,4 +37,25 @@
 // Tidak boleh mendaftar
 //
 
-void main() {}
+import 'dart:io';
+
+void main() {
+
+  //stdout.writeln("Program pendaftaran TNI");
+  //stdout.write("jenis kelamin(p/l): ");
+  String jKel = stdin.readLineSync() ?? "";
+  //stdout.write("usia: ");
+  int? usia = int.tryParse(stdin.readLineSync()!) ?? 0; 
+  //stdout.write("tinggi badan: ");
+  double? tb = double.tryParse(stdin.readLineSync()!) ?? 0;
+  //stdout.write("berat badan: ");
+  int? bb = int.tryParse(stdin.readLineSync()!) ?? 0;
+  
+  if(jKel=="P" && usia >= 17 && tb >= 1.6 && bb >= 50 && bb <= 80 ){    
+    print("Boleh mendaftar");
+  } else if(jKel=="L" && usia >= 17 && tb >= 1.7 && bb >= 60 && bb <= 90){
+    print("Boleh mendaftar");
+  }else {
+    print("Tidak boleh mendaftar");
+  }
+  }
