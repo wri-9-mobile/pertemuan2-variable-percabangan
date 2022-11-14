@@ -1,2 +1,4 @@
 // tampilkan "Halo WRI!" ke layar!
-void main() {}
+void main() {
+  print('Halo WRI!');
+}
