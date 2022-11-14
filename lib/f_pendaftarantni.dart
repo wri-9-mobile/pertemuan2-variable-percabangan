@@ -44,9 +44,17 @@ void main() {
   double? height = double.parse(stdin.readLineSync()!);
   int? weight = int.parse(stdin.readLineSync()!);
 
-  if (gender == "L" && age >= 17 && height >= 60 && weight <= 90) {
+  if (gender == "L" &&
+      age >= 17 &&
+      height >= 1.7 &&
+      weight >= 60 &&
+      weight <= 90) {
     print("Boleh mendaftar");
-  } else if (gender == "P" && age >= 17 && height >= 50 && weight <= 80) {
+  } else if (gender == "P" &&
+      age >= 17 &&
+      height >= 1.6 &&
+      weight >= 50 &&
+      weight <= 80) {
     print("Boleh mendaftar");
   } else {
     print("Tidak boleh mendaftar");
