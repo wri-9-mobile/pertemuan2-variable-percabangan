@@ -9,4 +9,19 @@
 // output:
 // Tidak boleh mengendarai mobil
 
-void main() {}
+import 'dart:io';
+
+void main() {
+  // stdout.write("Masukkan umur: ");
+  int? umur = int.tryParse(stdin.readLineSync() ?? "2");
+
+  if (umur != null) {
+    if (umur >= 17) {
+      stdout.write("Boleh mengendarai mobil");
+    } else {
+      stdout.write("Tidak boleh mengendarai mobil");
+    }
+  } else {
+    stdout.write("Umur belum diisi");
+  }
+}
