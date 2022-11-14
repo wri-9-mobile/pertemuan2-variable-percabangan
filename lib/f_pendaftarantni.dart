@@ -43,26 +43,16 @@ void main() {
   double? tinggi = double.tryParse(stdin.readLineSync()!) ?? 0;
   int? berat = int.tryParse(stdin.readLineSync()!) ?? 0;
 
-  if (umur >= 17) {
-    if (gender == "L") {
-      if (tinggi >= 1.7) {
-        if (berat >= 60 && berat <= 90){
-          print("Boleh mendaftar");
-        } else {print("Tidak boleh mendaftar");}
-      } else {print("Tidak boleh mendaftar");}
-    } 
-    
-    else if (gender == "P") {
-      if (tinggi >= 1.6) {
-        if (berat >= 50 && berat <= 80){
-          print("Boleh mendaftar");
-        } else {print("Tidak boleh mendaftar");}
-      } else {print("Tidak boleh mendaftar");}
-    }
-
-    else {
-      print("Tidak boleh mendaftar");
-    }
-  }else {print("Tidak boleh mendaftar");}
+  if (umur >= 17 && gender == "L" && tinggi >= 1.7 && berat >= 60 && berat <= 90) {
+    print("Boleh mendaftar");
+  } 
   
+  else if (umur >= 17 && gender == "P" && tinggi >= 1.6 && berat >= 50 && berat <= 80) {
+    print("Boleh mendaftar");
+  }
+
+  else {
+    print("Tidak boleh mendaftar");
+  }
+
 }
