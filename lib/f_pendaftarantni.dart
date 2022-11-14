@@ -44,32 +44,11 @@ void main() {
   double? height = double.parse(stdin.readLineSync()!);
   int? weight = int.parse(stdin.readLineSync()!);
 
-  if (age >= 17) {
-    if (gender == "L") {
-      if (height >= 1.7) {
-        if (weight >= 60 && weight <= 90) {
-          print("Boleh mendaftar");
-        } else {
-          print("Tidak boleh mendaftar");
-        }
-      } else {
-        print("Tidak boleh mendaftar");
-      }
-    } else if (gender == "P") {
-      if (height >= 1.6) {
-        if (weight >= 50 && weight <= 80) {
-          print("Boleh mendaftar");
-        } else {
-          print("Tidak boleh mendaftar");
-        }
-      } else {
-        print("Tidak boleh mendaftar");
-      }
-    } else {
-      print("Tidak boleh mendaftar");
-    }
+  if (gender == "L" && age >= 17 && height >= 60 && weight <= 90) {
+    print("Boleh mendaftar");
+  } else if (gender == "P" && age >= 17 && height >= 50 && weight <= 80) {
+    print("Boleh mendaftar");
   } else {
     print("Tidak boleh mendaftar");
   }
-
 }

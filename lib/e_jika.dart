@@ -11,13 +11,11 @@
 import 'dart:io';
 
 void main() {
-  
-int? umur = int.parse(stdin.readLineSync()!);
+  int? umur = int.parse(stdin.readLineSync()!);
 
-if (umur >= 17) {
-  print("Boleh mengendarai mobil");
-} else {
-  print("Tidak boleh mengendarai mobil");
-}
-
+  if (umur >= 17) {
+    print("Boleh mengendarai mobil");
+  } else {
+    print("Tidak boleh mengendarai mobil");
+  }
 }
