@@ -11,22 +11,42 @@ void main() {
 }
 
 // returnkan data kata/teks
-dynamic getNama() {}
+dynamic getNama() {
+  return "nurul";
+}
 
 // returnkan data bilangan bulat
-dynamic getUmur() {}
+dynamic getUmur() {
+  return 0;
+}
 
 // returnkan data bilangan desimal
-dynamic getTinggi() {}
+dynamic getTinggi() {
+  return 0.1;
+}
 
 // returnkan data boolean
-dynamic getIsWRIMember() {}
+dynamic getIsWRIMember() {
+  return true;
+}
 
 // returnkan data list
-dynamic getHobi() {}
+dynamic getHobi() {
+  return ["mancing", "membaca", "menulis"];
+}
 
 // returnkan data map
-dynamic getAlamat() {}
+dynamic getAlamat() {
+  return {
+    'Indonesia': 'Jakarta',
+    'England': 'London',
+    'China': 'Beijing',
+    'Germany': 'Berlin',
+  };
+}
 
 // returnkan data set
-dynamic getAnggota() {}
+dynamic getAnggota() {
+  var gfg1 = <String>{'nurul', 'fiqlal', 'imam'};
+  return gfg1;
+}
