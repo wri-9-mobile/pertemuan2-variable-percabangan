@@ -42,5 +42,5 @@ dynamic getAlamat() {
 
 // returnkan data set
 dynamic getAnggota() {
-  return <bool>{true};
+  return <int>{3, 6, 5, 7};
 }
