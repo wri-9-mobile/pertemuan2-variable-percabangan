@@ -44,35 +44,44 @@ void main() {
   // stdout.write("Masukkan jenis kelamin L/P");
   String jenisKelamin = stdin.readLineSync() ?? "nonGender";
   // stdout.write("Masukkan umur");
-  int? umur = int.tryParse(stdin.readLineSync() ?? "2");
+  int umur = int.tryParse(stdin.readLineSync()!) ?? 0;
   // stdout.write("Masukkan tinggi badan");
-  int? tinggiBadan = int.tryParse(stdin.readLineSync() ?? "2");
+  double tinggiBadan = double.tryParse(stdin.readLineSync()!) ?? 0;
   // stdout.write("Masukkan berat badan");
-  int? beratBadan = int.tryParse(stdin.readLineSync() ?? "2");
+  double beratBadan = double.tryParse(stdin.readLineSync()!) ?? 0;
 
-  if (jenisKelamin == "L" || jenisKelamin == "l") {
-    if (umur != null &&
-        umur >= 17 &&
-        tinggiBadan != null &&
-        tinggiBadan >= 170 &&
-        beratBadan != null &&
-        beratBadan >= 60 &&
-        beratBadan <= 90) {
+  if (jenisKelamin == "L") {
+    if (umur >= 17) {
       print("Boleh mendaftar");
     } else {
       print("Tidak boleh mendaftar");
     }
-  } else if (jenisKelamin == "P" || jenisKelamin == "p") {
-    if (umur != null &&
-        umur >= 17 &&
-        tinggiBadan != null &&
-        tinggiBadan >= 160 &&
-        beratBadan != null &&
-        beratBadan >= 50 &&
-        beratBadan <= 80) {
+    if (tinggiBadan! >= 170) {
       print("Boleh mendaftar");
     } else {
       print("Tidak boleh mendaftar");
+    }
+
+    if (beratBadan >= 60 && beratBadan <= 90) {
+      print("Boleh mendaftar");
+    } else {
+      print("Tidak boleh mendaftar");
+    }
+  } else if (jenisKelamin == "P") {
+    if (umur >= 17) {
+      print("Boleh mendaftar");
+    } else {
+      print("Tidak boleh mendaftar");
+    }
+    if (tinggiBadan >= 160) {
+      print("Boleh mendaftar");
+    } else {
+      print("Tidak boleh mendaftar");
+    }
+    if (beratBadan >= 50 && beratBadan <= 80) {
+      print("Boleh mendaftar");
+    } else {
+      print('Tidak boleh mendaftar');
     }
   }
 }

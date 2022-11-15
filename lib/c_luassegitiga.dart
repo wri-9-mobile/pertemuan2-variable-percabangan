@@ -7,13 +7,9 @@
 import 'dart:io';
 
 void main() {
-  stdout.writeln("Hitung Luas Segitiga");
-  // stdout.write("Masukkan alas: ");
-  var alas = stdin.readLineSync();
-  double hasilalas = double.parse(alas!);
-  // stdout.write("Masukkan tinggi: ");
-  var tinggi = stdin.readLineSync();
-  double hasiltinggi = double.parse(tinggi!);
-  double luas = hasiltinggi * hasilalas / 2;
+  // stdout.writeln("Hitung luas segitiga");
+  int alas = int.tryParse(stdin.readLineSync()!) ?? 0;
+  int tinggi = int.tryParse(stdin.readLineSync()!) ?? 0;
+  double luas = 0.5 * alas * tinggi;
   print(luas);
 }

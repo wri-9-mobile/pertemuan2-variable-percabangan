@@ -46,5 +46,6 @@ dynamic getAlamat() {
 
 // returnkan data set
 dynamic getAnggota() {
-  return "WRI 10";
+  var WRI10 = <String>{'Aziz', 'Nurul', 'Aldi'};
+  return WRI10;
 }
